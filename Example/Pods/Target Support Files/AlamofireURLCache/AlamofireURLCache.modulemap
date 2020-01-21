@@ -1,0 +1,6 @@
+framework module AlamofireURLCache {
+  umbrella header "AlamofireURLCache-umbrella.h"
+
+  export *
+  module * { export * }
+}

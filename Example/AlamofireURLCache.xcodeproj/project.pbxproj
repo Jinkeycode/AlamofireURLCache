@@ -28,8 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		15B56889228ECA3460885D6C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		40B8DB9AD6CA1A2265F4FF09 /* AlamofireURLCache.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = AlamofireURLCache.podspec; path = ../AlamofireURLCache.podspec; sourceTree = "<group>"; };
+		15B56889228ECA3460885D6C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		40B8DB9AD6CA1A2265F4FF09 /* AlamofireURLCache.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = AlamofireURLCache.podspec; path = ../AlamofireURLCache.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		607FACD01AFB9204008FA782 /* AlamofireURLCache_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlamofireURLCache_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,7 +43,7 @@
 		66E79110AAF5722E04648F16 /* Pods-AlamofireURLCache_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamofireURLCache_Tests.debug.xcconfig"; path = "Target Support Files/Pods-AlamofireURLCache_Tests/Pods-AlamofireURLCache_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		A721CECFBB1C5A1A0D7FCB95 /* Pods_AlamofireURLCache_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlamofireURLCache_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B237329D070C94980779D99A /* Pods-AlamofireURLCache_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamofireURLCache_Example.debug.xcconfig"; path = "Target Support Files/Pods-AlamofireURLCache_Example/Pods-AlamofireURLCache_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		DCFDF7E4974E47713834F868 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		DCFDF7E4974E47713834F868 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		E141048EA0F1ACBE815DC439 /* Pods-AlamofireURLCache_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamofireURLCache_Tests.release.xcconfig"; path = "Target Support Files/Pods-AlamofireURLCache_Tests/Pods-AlamofireURLCache_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		F99B594C47F6200E626763C4 /* Pods-AlamofireURLCache_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamofireURLCache_Example.release.xcconfig"; path = "Target Support Files/Pods-AlamofireURLCache_Example/Pods-AlamofireURLCache_Example.release.xcconfig"; sourceTree = "<group>"; };
 		FE55124F9A6769DFBCDA31DC /* Pods_AlamofireURLCache_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlamofireURLCache_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -156,7 +156,6 @@
 				66E79110AAF5722E04648F16 /* Pods-AlamofireURLCache_Tests.debug.xcconfig */,
 				E141048EA0F1ACBE815DC439 /* Pods-AlamofireURLCache_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -291,10 +291,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-AlamofireURLCache_Example/Pods-AlamofireURLCache_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireURLCache/AlamofireURLCache.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireURLCache.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
