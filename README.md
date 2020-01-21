@@ -1,0 +1,2 @@
+# AlamofireURLCache
+AlamofireURLCache for CocoaPods
