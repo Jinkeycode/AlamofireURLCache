@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'AlamofireURLCache_Example' do
+  pod 'AlamofireURLCache', :path => '../'
+
+  target 'AlamofireURLCache_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
