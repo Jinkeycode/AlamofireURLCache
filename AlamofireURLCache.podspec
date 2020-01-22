@@ -21,15 +21,15 @@ Pod::Spec.new do |s|
 The mirror of AlamofireURLCache which unsupported CocoaPods
                        DESC
 
-  s.homepage         = 'https://github.com/Jinkey/AlamofireURLCache'
+  s.homepage         = 'https://github.com/Jinkeycode/AlamofireURLCache'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Jinkey' => 'jinkey@bytetalk.cn' }
-  s.source           = { :git => 'https://github.com/Jinkey/AlamofireURLCache.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/Jinkeycode/AlamofireURLCache.git', :tag => s.version.to_s }
   s.social_media_url = 'https://jinkey.ai'
 
   s.ios.deployment_target = '8.0'
-  
+  s.swift_versions = ['5.0', '5.1']
   s.source_files = 'AlamofireURLCache/Classes/**/*'
   
   # s.resource_bundles = {

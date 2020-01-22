@@ -89,7 +89,7 @@ public struct Alamofire {
 public extension SessionManager {
 
     @discardableResult
-    public func request(
+    func request(
         _ url: URLConvertible,
         method: HTTPMethod = .get,
         parameters: Parameters? = nil,
@@ -121,7 +121,7 @@ public extension DataRequest {
     
     // MARK: - Public method
     @discardableResult
-    public func cache(maxAge:Int,isPrivate:Bool = false,ignoreServer:Bool = true)
+    func cache(maxAge:Int,isPrivate:Bool = false,ignoreServer:Bool = true)
         -> Self
     {
         if maxAge <= 0 {
@@ -211,7 +211,7 @@ public extension DataRequest {
     }
     
     @discardableResult
-    public func response<T: DataResponseSerializerProtocol>(
+    func response<T: DataResponseSerializerProtocol>(
         queue: DispatchQueue? = nil,
         responseSerializer: T,
         completionHandler: @escaping (DataResponse<T.SerializedObject>) -> Void,
@@ -232,7 +232,7 @@ public extension DataRequest {
     }
 
     @discardableResult
-    public func responseData(
+    func responseData(
         queue: DispatchQueue? = nil,
         completionHandler: @escaping (DataResponse<Data>) -> Void,
         autoClearCache:Bool)
@@ -247,7 +247,7 @@ public extension DataRequest {
     }
     
     @discardableResult
-    public func responseString(
+    func responseString(
         queue: DispatchQueue? = nil,
         encoding: String.Encoding? = nil,
         completionHandler: @escaping (DataResponse<String>) -> Void,
@@ -263,7 +263,7 @@ public extension DataRequest {
     }
     
     @discardableResult
-    public func responseJSON(
+    func responseJSON(
         queue: DispatchQueue? = nil,
         options: JSONSerialization.ReadingOptions = .allowFragments,
         completionHandler: @escaping (DataResponse<Any>) -> Void,
