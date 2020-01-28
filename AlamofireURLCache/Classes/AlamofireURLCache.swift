@@ -28,9 +28,9 @@ public struct AlamofireURLCache {
     fileprivate static let frameworkName = "AlamofireURLCache"
 }
 
-public struct Alamofire {
+public extension AlamofireURLCache {
     @discardableResult
-    public static func request(
+    static func request(
         _ url: URLConvertible,
         method: HTTPMethod = .get,
         parameters: Parameters? = nil,
@@ -49,7 +49,7 @@ public struct Alamofire {
         )
     }
     
-    public static func clearCache(request:URLRequest,urlCache:URLCache = URLCache.shared) {
+    static func clearCache(request:URLRequest,urlCache:URLCache = URLCache.shared) {
         if let cachedResponse = urlCache.cachedResponse(for: request) {
             if let httpResponse = cachedResponse.response as? HTTPURLResponse {
                 let newData = cachedResponse.data
@@ -70,13 +70,13 @@ public struct Alamofire {
         }
     }
     
-    public static func clearCache(dataRequest:DataRequest,urlCache:URLCache = URLCache.shared) {
+    static func clearCache(dataRequest:DataRequest,urlCache:URLCache = URLCache.shared) {
         if let httpRequest = dataRequest.request {
             self.clearCache(request: httpRequest, urlCache: urlCache)
         }
     }
     
-    public static func clearCache(url:String,parameters:[String:Any]? = nil, headers:[String:String]? = nil,urlCache:URLCache = URLCache.shared) {
+    static func clearCache(url:String,parameters:[String:Any]? = nil, headers:[String:String]? = nil,urlCache:URLCache = URLCache.shared) {
         if var urlRequest = try? URLRequest(url: url, method: HTTPMethod.get, headers: headers) {
             urlRequest.cachePolicy = .reloadIgnoringLocalCacheData
             if let newRequest = try? URLEncoding().encode(urlRequest, with: parameters) {
@@ -222,7 +222,7 @@ public extension DataRequest {
             dataResponse in
             if dataResponse.error != nil && autoClearCache {
                 if let request = dataResponse.request {
-                    Alamofire.clearCache(request: request)
+                    AlamofireURLCache.clearCache(request: request)
                 }
             }
             completionHandler(dataResponse)

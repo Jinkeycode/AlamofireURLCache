@@ -6,7 +6,6 @@ target 'AlamofireURLCache_Example' do
 
   target 'AlamofireURLCache_Tests' do
     inherit! :search_paths
-
     
   end
 end

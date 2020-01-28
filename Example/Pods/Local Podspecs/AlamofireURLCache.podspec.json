@@ -3,7 +3,7 @@
   "version": "0.4.0",
   "summary": "The mirror of kenshincui/AlamofireURLCache which unsupported CocoaPods",
   "description": "The mirror of AlamofireURLCache which unsupported CocoaPods",
-  "homepage": "https://github.com/Jinkey/AlamofireURLCache",
+  "homepage": "https://github.com/Jinkeycode/AlamofireURLCache",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,7 +12,7 @@
     "Jinkey": "jinkey@bytetalk.cn"
   },
   "source": {
-    "git": "https://github.com/Jinkey/AlamofireURLCache.git",
+    "git": "https://github.com/Jinkeycode/AlamofireURLCache.git",
     "tag": "0.4.0"
   },
   "social_media_url": "https://jinkey.ai",
