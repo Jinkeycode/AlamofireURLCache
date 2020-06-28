@@ -1,13 +1,13 @@
 PODS:
   - Alamofire (4.9.1)
-  - AlamofireURLCache (0.4.0):
-    - Alamofire (~> 4.4)
+  - AlamofireURLCache (0.5.0):
+    - Alamofire
 
 DEPENDENCIES:
   - AlamofireURLCache (from `../`)
 
 SPEC REPOS:
-  https://cdn.cocoapods.org/:
+  trunk:
     - Alamofire
 
 EXTERNAL SOURCES:
@@ -16,8 +16,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
-  AlamofireURLCache: 638c10c37e8113ac7e153c171d8f163a2aa79102
+  AlamofireURLCache: aa218d1ff55074bd6a6b8dea7679310bd2d86b22
 
-PODFILE CHECKSUM: 9554e1c45b340d1aa3c49f1bb1afb89499534527
+PODFILE CHECKSUM: b2ee22a495b5f47605e73e49063d1eb31f41eb2e
 
-COCOAPODS: 1.9.0.beta.2
+COCOAPODS: 1.9.3

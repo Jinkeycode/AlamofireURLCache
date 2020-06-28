@@ -1,6 +1,6 @@
 {
   "name": "AlamofireURLCache",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "summary": "The mirror of kenshincui/AlamofireURLCache which unsupported CocoaPods",
   "description": "The mirror of AlamofireURLCache which unsupported CocoaPods",
   "homepage": "https://github.com/Jinkeycode/AlamofireURLCache",
@@ -13,11 +13,11 @@
   },
   "source": {
     "git": "https://github.com/Jinkeycode/AlamofireURLCache.git",
-    "tag": "0.4.0"
+    "tag": "0.5.0"
   },
   "social_media_url": "https://jinkey.ai",
   "platforms": {
-    "ios": "8.0"
+    "ios": "10.0"
   },
   "swift_versions": [
     "5.0",
@@ -26,7 +26,7 @@
   "source_files": "AlamofireURLCache/Classes/**/*",
   "dependencies": {
     "Alamofire": [
-      "~> 4.4"
+
     ]
   },
   "swift_version": "5.1"
