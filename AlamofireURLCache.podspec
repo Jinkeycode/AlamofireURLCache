@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AlamofireURLCache'
-  s.version          = '0.4.0'
+  s.version          = '0.5.0'
   s.summary          = 'The mirror of kenshincui/AlamofireURLCache which unsupported CocoaPods'
 
 # This description is used to generate tags and improve search results.
@@ -28,7 +28,7 @@ The mirror of AlamofireURLCache which unsupported CocoaPods
   s.source           = { :git => 'https://github.com/Jinkeycode/AlamofireURLCache.git', :tag => s.version.to_s }
   s.social_media_url = 'https://jinkey.ai'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '10.0'
   s.swift_versions = ['5.0', '5.1']
   s.source_files = 'AlamofireURLCache/Classes/**/*'
   
@@ -38,5 +38,5 @@ The mirror of AlamofireURLCache which unsupported CocoaPods
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-   s.dependency 'Alamofire', '~> 4.4'
+   s.dependency 'Alamofire'
 end
